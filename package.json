@@ -24,7 +24,13 @@
 	"xo": {
 		"space": true
 	},
-	"dependencies": {},
+	"dependencies": {
+		"bluebird": "^3.5.0",
+		"cheerio": "^1.0.0-rc.2",
+		"number-ranger": "^2.0.0",
+		"request": "^2.82.0",
+		"request-promise": "^4.2.2"
+	},
 	"devDependencies": {
 		"ava": "^0.20.0",
 		"xo": "^0.18.2"
