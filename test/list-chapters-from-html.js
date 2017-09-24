@@ -1,12 +1,7 @@
-import fs from 'fs';
 import path from 'path';
-import Promise from 'bluebird';
 import test from 'ava';
 import listChaptersFromHtml from '../list-chapters-from-html';
-
-function loadFixture(filePath) {
-  return Promise.fromCallback(cb => fs.readFile(filePath, 'utf-8', cb));
-}
+import loadFixture from './helpers/load-fixture';
 
 test('should list chapters to download from the HTML page', async t => {
   const html = await loadFixture(path.join(__dirname, './fixtures/emperorofsoloplay-index.html'));
